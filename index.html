@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Amigo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Venda de Amigo</h1>
+    <div class="container" id="cadastroContainer">
+        <form id="resourceForm">
+            <input type="hidden" id="resourceId">
+            <div class="form-group">
+                <label for="resourceName">Nome</label>
+                <input type="text" id="resourceName" required>
+            </div>
+            <div class="form-group">
+                <label for="resourceDescription">Idade</label>
+                <input type="text" id="resourceDescription" required>
+            </div>
+            <div class="form-group">
+                <label for="resourceAddress">Endereço</label>
+                <input type="text" id="resourceAddress" required>
+            </div>
+            <button type="submit" class="button button-primary">Salvar Recurso</button>
+            <p id="message" class="message"></p>
+        </form>
+        <button onclick="mostrarRecursos()" class="button button-secondary">Ver Recursos Cadastrados</button>
+    </div>
+
+    <div class="container" id="visualizacaoContainer" style="display: none;">
+        <h2>Recursos Cadastrados</h2>
+        <ul id="resourceList"></ul>
+        <button onclick="voltarCadastro()" class="button button-secondary">Voltar ao Cadastro</button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
