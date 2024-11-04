@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-secondary {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-top: 10px;
+}
+
+.message {
+    color: #28a745;
+    margin-top: 10px;
+}
+
+#resourceList li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contêiner de botões em coluna */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Alinha os botões verticalmente */
+    margin-top: 8px; /* Espaço acima do contêiner de botões */
+}
+
+/* Estilo dos botões */
+.edit-button, .delete-button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px; /* Espaço entre os botões */
+    width: 80px; /* Define uma largura fixa para os botões */
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Cor do botão Editar */
+}
+
+.delete-button {
+    background-color: #f44336; /* Cor do botão Deletar */
+}
